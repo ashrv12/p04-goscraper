@@ -33,3 +33,6 @@ go.work.sum
 
 # Don't add dev build execs
 p04*
+
+# Postgres data store
+data/

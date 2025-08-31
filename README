@@ -1,3 +1,32 @@
 # Goscraper project 04
 
--   [ ] Hi
+-   [x] Create pg docker container compose file
+
+```bash
+# to deploy postgresql and pgadmin run these commands
+
+docker-compose up -d
+
+# to remove the containers
+
+docker-compose down
+
+# volume related commands
+# list volumes
+docker volume ls
+
+# inspect the volume
+docker volume inspect pgdata
+
+# remove unused volumes
+docker volume prune
+
+# run the http server
+go build && ./p04-goscraper
+
+# generate the sqlc
+sqlc generate
+
+# db migrations
+cd sql/schema
+```
