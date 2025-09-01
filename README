@@ -2,7 +2,7 @@
 
 -   [x] Create pg docker container compose file
 
-```
+```bash
 # to deploy postgresql and pgadmin run these commands
 
 docker-compose up -d
